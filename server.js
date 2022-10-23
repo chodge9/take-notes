@@ -24,4 +24,6 @@ app.get("/notes", function(req, res){
 app.get("/api/notes", function(req, res){
     getNotes().then(notes=>res.json(notes)).catch(err=>res.json (err))
 })
+//add post route to add new note
+//add delete route to delete new note
 app.listen(PORT, ()=>console.log("listening on"+ PORT))
